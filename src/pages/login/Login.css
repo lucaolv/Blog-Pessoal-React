@@ -1,0 +1,27 @@
+.login-background{
+  background-image: url( '../../assets/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  opacity: 100%; 
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  padding: 20px;
+  width: 60%;
+  height: 80%;
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  background-color: #7c4dfa;
+  border-radius: 30px;
+  font-size: 17px;
+}

@@ -17,12 +17,7 @@ function Login() {
   const { usuario, handleLogin } = useContext(AuthContext);
   const { isLoading } = useContext(AuthContext);
 
-  useEffect(() => {
-    if (usuario.token !== "") {
-      navigate('/home');
-    }
-  }, [usuario]);
-
+ 
   function atualizarEstado(e: ChangeEvent<HTMLInputElement>) {
     setUsuarioLogin({
       ...usuarioLogin,
@@ -35,6 +30,13 @@ function Login() {
     handleLogin(usuarioLogin);
   }
 
+  useEffect(() => {
+    if (usuario.token !== "") {
+      navigate('/home');
+    }
+  }, [usuario]);
+
+  
   return (
     <>
       <div className="login-background">
@@ -48,7 +50,7 @@ function Login() {
                 id="usuario"
                 name="usuario"
                 placeholder="Usuario"
-                className="border-2 border-slate-700 rounded p-2"
+                className="border-2 border-slate-800 rounded p-2"
                 value={usuarioLogin.usuario}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
               />
@@ -83,7 +85,7 @@ function Login() {
 
             <p>
               Ainda não tem uma conta?{' '}
-              <Link to="/cadastro" className="text-gray-950 hover:underline">
+              <Link to="/cadastro" className="text-sky-400	 hover:underline">
                 Cadastre-se
               </Link>
             </p>

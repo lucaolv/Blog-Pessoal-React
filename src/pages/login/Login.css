@@ -1,9 +1,7 @@
-.login-background{
-  background-image: url( '../../assets/fundo.jpg');
+.login-background {
+  background: rgb(0, 7, 46);
   background-size: cover;
-  background-position: center;
   height: 80vh;
-  opacity: 100%; 
   display: flex;
   justify-content: center;
   font-family: 'Courier New', Courier, monospace;
@@ -21,7 +19,8 @@
 }
 
 .form {
-  background-color: #7c4dfa;
-  border-radius: 30px;
+  background-color: rgb(108, 182, 211);
+  background-image: linear-gradient( to right, rgb(0, 0, 56), transparent, rgb(0, 0, 56) ); 
+  border-radius: 20px;
   font-size: 17px;
 }

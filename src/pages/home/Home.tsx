@@ -1,4 +1,3 @@
-import React from 'react';
 import homeLogo from '../../assets/login.jpg'
 import './Home.css';
 import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';

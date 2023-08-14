@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
 import './App.css';
 import 'react-toastify/dist/ReactToastify.css';
 import Login from './pages/login/Login';
@@ -21,13 +18,13 @@ import Perfil from './pages/perfil/Perfil';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 
 function App() {
-  
+
   return (
     <>
       <AuthProvider>
-      <ToastContainer />
+        <ToastContainer />
         <BrowserRouter>
-        <Navbar />
+          <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
               <Route path="/" element={<Login />} />
